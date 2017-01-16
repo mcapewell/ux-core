@@ -2,6 +2,14 @@
 
 UX Core is a HTML, CSS and JavaScript framework for developing web applications.
 
+## Getting Started
+
+TODO...
+
+## Contributing
+
+TODO...
+
 ## License
 
-UX Core uses either the [MIT](LICENSE.md) license for code.
+Code and documentation copyright (c) 2017 Matthew Capewell. Code and docs released under the [MIT License](LICENSE.md).
