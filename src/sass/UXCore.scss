@@ -18,7 +18,4 @@ $ux-core-gray:      #AAAAAA !default;
 $ux-core-silver:    #DDDDDD !default;
 $ux-core-white:     #FFFFFF !default;
 
-body {
-    background-color: $ux-core-olive;
-    color: $ux-core-white;
-}
+@import './Components';

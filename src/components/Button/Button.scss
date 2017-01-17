@@ -1,0 +1,49 @@
+@mixin setBgColorAndHover($baseColor) {
+    background-color: $baseColor;
+
+    &:hover {
+        background-color: darken($baseColor, 10%);
+    }
+}
+
+.btn-list {
+    display: flex;
+}
+
+.btn {
+    display:inline-block;
+    border: none;
+    height: 32px; /* 4rem */
+    line-height: 32px;
+    padding: 0 16px; /* 2rem */
+    margin: 0 8px 0 0;
+    text-decoration: none;
+
+    @include setBgColorAndHover($ux-core-silver);
+    color: $ux-core-black;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    &.btn-primary {
+        @include setBgColorAndHover($ux-core-blue);
+        color: $ux-core-white;
+    }
+
+    &.btn-active {
+        @include setBgColorAndHover($ux-core-green);
+        color: $ux-core-white;
+    }
+
+    &[disabled] {
+        background-color: #f1f1f1;
+        color: #c1c1c1;
+        cursor: default;
+    }
+
+    .material-icons {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-right: 0.5rem;
+    }
+}

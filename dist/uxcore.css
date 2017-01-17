@@ -1,3 +1,37 @@
-body {
-  background-color: #3D9970;
-  color: #FFFFFF; }
+.btn-list {
+  display: flex; }
+
+.btn {
+  display: inline-block;
+  border: none;
+  height: 32px;
+  /* 4rem */
+  line-height: 32px;
+  padding: 0 16px;
+  /* 2rem */
+  margin: 0 8px 0 0;
+  text-decoration: none;
+  background-color: #DDDDDD;
+  color: #111111;
+  cursor: pointer;
+  white-space: nowrap; }
+  .btn:hover {
+    background-color: #c4c4c4; }
+  .btn.btn-primary {
+    background-color: #0074D9;
+    color: #FFFFFF; }
+    .btn.btn-primary:hover {
+      background-color: #0059a6; }
+  .btn.btn-active {
+    background-color: #2ECC40;
+    color: #FFFFFF; }
+    .btn.btn-active:hover {
+      background-color: #25a233; }
+  .btn[disabled] {
+    background-color: #f1f1f1;
+    color: #c1c1c1;
+    cursor: default; }
+  .btn .material-icons {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-right: 0.5rem; }
