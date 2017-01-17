@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var webserver = require('gulp-webserver');
 
 gulp.task('sass', function() {
     gulp.src('./src/sass/UXCore.scss')
@@ -7,6 +8,15 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('webserver', function() {
+    gulp.src('.')
+        .pipe(webserver({
+            livereload: true,
+            fallback: '/src/docs/index.html',
+            open: true
+        }));
+});
+
+gulp.task('default', ['sass', 'webserver'], function() {
     gulp.watch('./src/**/*.scss', ['sass']);
 });
