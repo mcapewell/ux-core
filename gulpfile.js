@@ -20,3 +20,8 @@ gulp.task('webserver', function() {
 gulp.task('default', ['sass', 'webserver'], function() {
     gulp.watch('./src/**/*.scss', ['sass']);
 });
+
+gulp.task('copyfonts', function() {
+    gulp.src('./node_modules/material-design-icons/iconfont/**/*.{eot,woff2,woff,ttf}')
+        .pipe(gulp.dest('./dist'));
+});
