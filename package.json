@@ -6,7 +6,8 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "gulp-webserver": "^0.9.1",
+    "material-design-icons": "^3.0.1",
     "normalize.css": "^5.0.0",
-    "material-design-icons": "^3.0.1"
+    "prismjs": "^1.6.0"
   }
 }
