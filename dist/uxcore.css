@@ -448,7 +448,7 @@ template {
   display: flex; }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
   border: none;
   height: 2rem;
   /* 32px */
@@ -482,5 +482,12 @@ template {
     cursor: default; }
   .btn .material-icons {
     font-size: 1rem;
+    /* 16px */
     line-height: 2rem;
-    margin-right: 0.5rem; }
+    /* 32px */ }
+  .btn .material-icons-prefix {
+    margin-right: 0.5rem;
+    /* 8px */ }
+  .btn .material-icons-suffix {
+    margin-left: 0.5rem;
+    /* 8px */ }

@@ -3,7 +3,7 @@
 }
 
 .btn {
-    display:inline-block;
+    display: inline-flex;
     border: none;
     height: 2rem; /* 32px */
     line-height: 2rem; /* 32px */
@@ -34,8 +34,15 @@
     }
 
     .material-icons {
-        font-size: 1rem;
-        line-height: 2rem;
-        margin-right: 0.5rem;
+        font-size: 1rem; /* 16px */
+        line-height: 2rem; /* 32px */
+    }
+
+    .material-icons-prefix {
+        margin-right: 0.5rem; /* 8px */
+    }
+
+    .material-icons-suffix {
+        margin-left: 0.5rem; /* 8px */
     }
 }
