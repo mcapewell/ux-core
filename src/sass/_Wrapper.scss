@@ -1,0 +1,13 @@
+.ux-core {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: $ux-core-black;
+    font-family: $font-family-west-european;
+    font-size: 16px;
+}
+
+*[lang^='ja-JP'] .ux-core,
+.ux-core *[lang^='ja-JP'],
+.ux-core[lang^='ja-JP'] {
+    font-family: $font-family-japanese;
+}

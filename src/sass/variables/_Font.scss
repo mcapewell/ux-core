@@ -1,0 +1,6 @@
+// Fallback fonts, if specified system or web fonts are unavailable
+$font-family-fallbacks: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif !default;
+
+// Language-specific font stacks
+$font-family-japanese:      'Yu Gothic', 'Segoe UI', $font-family-fallbacks !default;
+$font-family-west-european: 'Segoe UI', $font-family-fallbacks !default;

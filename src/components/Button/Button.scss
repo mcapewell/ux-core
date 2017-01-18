@@ -1,11 +1,3 @@
-@mixin setBgColorAndHover($baseColor) {
-    background-color: $baseColor;
-
-    &:hover {
-        background-color: darken($baseColor, 10%);
-    }
-}
-
 .btn-list {
     display: flex;
 }
@@ -13,17 +5,16 @@
 .btn {
     display:inline-block;
     border: none;
-    height: 32px; /* 4rem */
-    line-height: 32px;
-    padding: 0 16px; /* 2rem */
-    margin: 0 8px 0 0;
+    height: 2rem; /* 32px */
+    line-height: 2rem; /* 32px */
+    padding: 0 1rem; /* 16px */
+    margin: 0 0.5rem 0 0; /* 8px */
     text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
 
     @include setBgColorAndHover($ux-core-silver);
     color: $ux-core-black;
-
-    cursor: pointer;
-    white-space: nowrap;
 
     &.btn-primary {
         @include setBgColorAndHover($ux-core-blue);

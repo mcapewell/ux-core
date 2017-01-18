@@ -1,21 +1,14 @@
-// Default colors from http://clrs.cc
+// Variables
+@import './variables/Color';
+@import './variables/Font';
 
-$ux-core-navy:      #004578 !default;
-$ux-core-blue:      #0074D9 !default;
-$ux-core-aqua:      #7FDBFF !default;
-$ux-core-teal:      #39CCCC !default;
-$ux-core-olive:     #3D9970 !default;
-$ux-core-green:     #2ECC40 !default;
-$ux-core-lime:      #01FF70 !default;
-$ux-core-yellow:    #FFDC00 !default;
-$ux-core-orange:    #FF851B !default;
-$ux-core-red:       #FF4136 !default;
-$ux-core-maroon:    #85144b !default;
-$ux-core-fuchsia:   #F012BE !default;
-$ux-core-purple:    #B10DC9 !default;
-$ux-core-black:     #111111 !default;
-$ux-core-gray:      #AAAAAA !default;
-$ux-core-silver:    #DDDDDD !default;
-$ux-core-white:     #FFFFFF !default;
+// Mixins
+@import './mixins/Color';
+@import './mixins/General';
 
+// Partials
+@import './Wrapper';
+
+// Components
 @import './Components';
+
