@@ -12,6 +12,7 @@
     text-decoration: none;
     cursor: pointer;
     white-space: nowrap;
+    font-family: inherit;
 
     @include setBgColorAndHover($ux-core-silver);
     color: $ux-core-black;
