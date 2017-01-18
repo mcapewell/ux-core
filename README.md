@@ -4,6 +4,8 @@ UX Core is a HTML, CSS and JavaScript framework for developing web applications.
 
 ## Getting Started
 
+### Visual Studio 2015
+
 Add the following to bower.json and Visual Studio should install the Bower package automatically when you save the file:
 
 ```json
@@ -16,6 +18,20 @@ Add the following to your webpage and you should be good to go:
 
 ```html
 <link rel="stylesheet" href="~/lib/ux-core/dist/uxcore.css">
+```
+
+### Visual Studio Code
+
+Run the following command from the command line to install the Bower package:
+
+```
+bower install git://github.com/mcapewell/ux-core.git#master
+```
+
+Add the following to your webpage and you should be good to go:
+
+```html
+<link rel="stylesheet" href="bower_components/ux-core/dist/uxcore.css">
 ```
 
 ## Contributing
