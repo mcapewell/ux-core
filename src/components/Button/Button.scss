@@ -40,16 +40,12 @@
         cursor: default;
     }
 
-    .material-icons {
-        font-size: 18px;
-        line-height: 2rem; /* 32px */
-    }
-
-    .material-icons-prefix {
+    .material-icons:not(:only-child) {
         margin-right: 0.5rem; /* 8px */
     }
 
-    .material-icons-suffix {
-        margin-left: 0.5rem; /* 8px */
+    .material-icons {
+        font-size: 18px;
+        line-height: 2rem; /* 32px */
     }
 }
