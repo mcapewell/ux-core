@@ -36,7 +36,17 @@ Add the following to your webpage and you should be good to go:
 
 ## Contributing
 
-TODO...
+Clone the Git repository and install the npm dev-dependencies:
+
+```
+git clone https://github.com/mcapewell/ux-core.git
+npm install npm@latest -g
+npm install -g gulp
+npm install
+```
+Perform a build in Visual Studio Code:
+
+`Ctrl` - `Shift` - `B`
 
 ## License
 
