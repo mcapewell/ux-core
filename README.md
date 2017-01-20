@@ -46,7 +46,9 @@ npm install
 ```
 Perform a build in Visual Studio Code:
 
-`Ctrl` - `Shift` - `B`
+Windows: `Ctrl` - `Shift` - `B`
+
+Mac: `Cmd` - `Shift` - `B`
 
 ## License
 
