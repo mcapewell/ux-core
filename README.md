@@ -46,7 +46,7 @@ npm install
 ```
 Perform a build in Visual Studio Code:
 
-Windows: `Ctrl` - `Shift` - `B`
+Windows: <kbd>Ctrl</kbd> - `Shift` - `B`
 
 Mac: `Cmd` - `Shift` - `B`
 
