@@ -46,9 +46,9 @@ npm install
 ```
 Perform a build in Visual Studio Code:
 
-Windows: <kbd>Ctrl</kbd> - `Shift` - `B`
+Windows: <kbd>Ctrl</kbd> - <kbd>Shift</kbd> - <kbd>B</kbd>
 
-Mac: `Cmd` - `Shift` - `B`
+Mac: <kbd>Cmd</kbd> - <kbd>Shift</kbd> - <kbd>B</kbd>
 
 ## License
 
