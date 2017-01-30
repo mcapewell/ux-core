@@ -1,0 +1,38 @@
+/* All grid sizes are based on percentages and placed in an array.
+ * Any decimal will be rounded down for its respective class
+ * name - 33.3333 will be .column-33.
+ */
+
+$grid: 10,20,30,40,50,60,70,80,90,100,25,33.3333,66.6667,75;
+$column-padding: 1rem;
+$margin-bottom: 1rem;
+
+// The rows have a negative margin which are offset by the padding on the columns.
+%column-padding {
+  padding-left: $column-padding;
+  padding-right: $column-padding;
+}
+
+%row-margin {
+  //margin-left: -$column-padding;
+  //margin-right: -$column-padding;
+  margin-bottom: $margin-bottom;
+}
+
+.row {
+  @extend %row-margin;
+  &::before,
+  &::after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
+}
+
+@each $entry in $grid {
+    .column-#{floor($entry)} {
+        width: percentage($entry) * 0.01;
+        float: left;
+        @extend %column-padding;
+    }
+}

@@ -10,46 +10,56 @@
         <link rel="stylesheet" href="node_modules/prismjs/themes/prism.css">
     </head>
     <body class="ux-core">
-        <h1>Button</h1>
-        <p>Buttons are best used to enable a user to commit a change or complete steps in a task. They are typically found inside forms, dialogs, panels or pages. An example of their usage is confirming the deletion of a file in a confirmation dialog.</p>
-        <p>When considering their place in a layout, contemplate the order in which a user will flow through the UI. As an example, in a form, the individual will need to read and interact with the form fields before submiting the form. Therefore, as a general rule, the button should be placed at the bottom of the UI container (a dialog, panel, or page) which holds the related UI elements.</p>
-        <p>While buttons can technically be used to navigate a user to another part of the experience, this is not recommended unless that navigation is part of an action or their flow.</p>
-        <h2>Examples</h2>
-        <h3>Default Font</h3>
-        <section class="example">
-        <div class="btn-list">
-            <a class="btn" href="#">Link</a>
-            <button class="btn">Button</button>
-            <input class="btn" type="button" value="Input">
-            <input class="btn" type="submit" value="Submit">
-        </div>
-        <pre><code class="language-html">&lt;a class="btn" href="#">Link&lt;/a>
+        <div class="row">
+            <div class="column-25">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Typography</a></li>
+                    <li><a href="#">Grid</a></li>
+                    <li><a href="#">Button</a></li>
+                </ul>
+            </div>
+            <div class="column-75">
+                <h1>Button</h1>
+                <p>Some blurb about buttons...</p>
+                <h2>Examples</h2>
+                <h3>Default Font</h3>
+                <section class="example">
+                <div class="btn-list">
+                    <a class="btn" href="#">Link</a>
+                    <button class="btn">Button</button>
+                    <input class="btn" type="button" value="Input">
+                    <input class="btn" type="submit" value="Submit">
+                </div>
+                <pre><code class="language-html">&lt;a class="btn" href="#">Link&lt;/a>
 &lt;button class="btn">Button&lt;/button>
 &lt;input class="btn" type="button" value="Input">
 &lt;input class="btn" type="submit" value="Submit"></code></pre>
-        </section>
-        <section class="example">
-        <div class="btn-list">
-            <a class="btn" href="#"><i class="material-icons">menu</i><span>Icon</span></a>
-            <a class="btn" href="#"><i class="material-icons">close</i></a>
-            <a class="btn btn-primary" href="#">Primary</a>
-            <a class="btn btn-active" href="#">Active</a>
-            <a class="btn" disabled href="#">Disabled</a>
-            <button class="btn btn-danger"><i class="material-icons">delete_forever</i><span>Danger</span></button>
-            <button class="btn">Japanese ボタン</button>
-        </div>
-        <pre><code class="language-html">&lt;a class="btn" href="#">&lt;i class="material-icons">menu&lt;/i>&lt;span>Icon&lt;/span>&lt;/a>
+                </section>
+                <section class="example">
+                <div class="btn-list">
+                    <a class="btn" href="#"><i class="material-icons">menu</i><span>Icon</span></a>
+                    <a class="btn" href="#"><i class="material-icons">close</i></a>
+                    <a class="btn btn-primary" href="#">Primary</a>
+                    <a class="btn btn-active" href="#">Active</a>
+                    <a class="btn" disabled href="#">Disabled</a>
+                    <button class="btn btn-danger"><i class="material-icons">delete_forever</i><span>Danger</span></button>
+                    <button class="btn">Japanese ボタン</button>
+                </div>
+                <pre><code class="language-html">&lt;a class="btn" href="#">&lt;i class="material-icons">menu&lt;/i>&lt;span>Icon&lt;/span>&lt;/a>
 &lt;a class="btn" href="#">&lt;i class="material-icons">close&lt;/i>&lt;/a>
 &lt;a class="btn btn-primary" href="#">Primary&lt;/a>
 &lt;a class="btn btn-active" href="#">Active&lt;/a>
 &lt;a class="btn" disabled href="#">Disabled&lt;/a>
 &lt;button class="btn btn-danger">&lt;i class="material-icons">delete_forever&lt;/i>&lt;span>Danger&lt;/span>&lt;/button>
 &lt;button class="btn">Japanese ボタン&lt;/button></code></pre>
-        </section>
-        <h3>Japanese Specific Font</h3>
-        <p><em>Is this actually any better to read?</em></p>
-        <div lang="ja-JP" class="btn-list" style="margin-top: 10px;">
-            <a class="btn" href="#">Japanese ボタン</a>
+                </section>
+                <h3>Japanese Specific Font</h3>
+                <p><em>Is this actually any better to read?</em></p>
+                <div lang="ja-JP" class="btn-list" style="margin-top: 10px;">
+                    <a class="btn" href="#">Japanese ボタン</a>
+                </div>
+            </div>
         </div>
         <script src="node_modules/prismjs/prism.js"></script>
     </body>

@@ -13,8 +13,10 @@
 @import './mixins/General';
 
 // Partials
+@import './General';
 @import './Wrapper';
 @import './Typography';
+@import './Grid';
 
 // Components
 @import './Components';
