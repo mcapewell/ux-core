@@ -469,17 +469,55 @@ h2 {
   border-bottom: 1px solid #eee; }
 
 h3 {
-  font-size: 1.25em; }
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1.1em; }
+
+h5, h6 {
+  font-size: 1em; }
 
 /* All grid sizes are based on percentages and placed in an array.
  * Any decimal will be rounded down for its respective class
  * name - 33.3333 will be .column-33.
  */
-.column-10, .column-20, .column-30, .column-40, .column-50, .column-60, .column-70, .column-80, .column-90, .column-100, .column-25, .column-33, .column-66, .column-75 {
+.small-10,
+.large-10, .column-10, .small-20,
+.large-20, .column-20, .small-30,
+.large-30, .column-30, .small-40,
+.large-40, .column-40, .small-50,
+.large-50, .column-50, .small-60,
+.large-60, .column-60, .small-70,
+.large-70, .column-70, .small-80,
+.large-80, .column-80, .small-90,
+.large-90, .column-90, .small-100,
+.large-100, .column-100, .small-25,
+.large-25, .column-25, .small-33,
+.large-33, .column-33, .small-66,
+.large-66, .column-66, .small-75,
+.large-75, .column-75 {
   padding-left: 1rem;
   padding-right: 1rem; }
 
 .row {
+  margin-bottom: 1rem; }
+
+.small-10,
+.large-10, .small-20,
+.large-20, .small-30,
+.large-30, .small-40,
+.large-40, .small-50,
+.large-50, .small-60,
+.large-60, .small-70,
+.large-70, .small-80,
+.large-80, .small-90,
+.large-90, .small-100,
+.large-100, .small-25,
+.large-25, .small-33,
+.large-33, .small-66,
+.large-66, .small-75,
+.large-75 {
+  width: 100%;
   margin-bottom: 1rem; }
 
 .row::before, .row::after {
@@ -487,6 +525,7 @@ h3 {
   content: ' ';
   clear: both; }
 
+/* Mobile view */
 .column-10 {
   width: 10%;
   float: left; }
@@ -543,10 +582,132 @@ h3 {
   width: 75%;
   float: left; }
 
+/* Small screen breakpoint */
+@media (min-width: 600px) {
+  .small-10 {
+    width: 10%;
+    float: left;
+    margin-bottom: 0; }
+  .small-20 {
+    width: 20%;
+    float: left;
+    margin-bottom: 0; }
+  .small-30 {
+    width: 30%;
+    float: left;
+    margin-bottom: 0; }
+  .small-40 {
+    width: 40%;
+    float: left;
+    margin-bottom: 0; }
+  .small-50 {
+    width: 50%;
+    float: left;
+    margin-bottom: 0; }
+  .small-60 {
+    width: 60%;
+    float: left;
+    margin-bottom: 0; }
+  .small-70 {
+    width: 70%;
+    float: left;
+    margin-bottom: 0; }
+  .small-80 {
+    width: 80%;
+    float: left;
+    margin-bottom: 0; }
+  .small-90 {
+    width: 90%;
+    float: left;
+    margin-bottom: 0; }
+  .small-100 {
+    width: 100%;
+    float: left;
+    margin-bottom: 0; }
+  .small-25 {
+    width: 25%;
+    float: left;
+    margin-bottom: 0; }
+  .small-33 {
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 0; }
+  .small-66 {
+    width: 66.6667%;
+    float: left;
+    margin-bottom: 0; }
+  .small-75 {
+    width: 75%;
+    float: left;
+    margin-bottom: 0; } }
+
+/* Large screen breakpoint */
+@media (min-width: 1000px) {
+  .large-10 {
+    width: 10%;
+    float: left;
+    margin-bottom: 0; }
+  .large-20 {
+    width: 20%;
+    float: left;
+    margin-bottom: 0; }
+  .large-30 {
+    width: 30%;
+    float: left;
+    margin-bottom: 0; }
+  .large-40 {
+    width: 40%;
+    float: left;
+    margin-bottom: 0; }
+  .large-50 {
+    width: 50%;
+    float: left;
+    margin-bottom: 0; }
+  .large-60 {
+    width: 60%;
+    float: left;
+    margin-bottom: 0; }
+  .large-70 {
+    width: 70%;
+    float: left;
+    margin-bottom: 0; }
+  .large-80 {
+    width: 80%;
+    float: left;
+    margin-bottom: 0; }
+  .large-90 {
+    width: 90%;
+    float: left;
+    margin-bottom: 0; }
+  .large-100 {
+    width: 100%;
+    float: left;
+    margin-bottom: 0; }
+  .large-25 {
+    width: 25%;
+    float: left;
+    margin-bottom: 0; }
+  .large-33 {
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 0; }
+  .large-66 {
+    width: 66.6667%;
+    float: left;
+    margin-bottom: 0; }
+  .large-75 {
+    width: 75%;
+    float: left;
+    margin-bottom: 0; } }
+
 .btn-list {
   display: flex; }
 
-.btn {
+.button,
+a.button,
+button,
+[type=button],
+[type=submit] {
   border-radius: 2px;
   background-clip: padding-box;
   display: inline-flex;
@@ -564,33 +725,74 @@ h3 {
   white-space: nowrap;
   font-family: inherit;
   font-weight: 400;
+  vertical-align: middle;
   background-color: #DDDDDD;
   color: #111111; }
-  .btn:hover {
+  .button:hover,
+  a.button:hover,
+  button:hover,
+  [type=button]:hover,
+  [type=submit]:hover {
     background-color: #c4c4c4; }
-  .btn.btn-primary {
+  .button.button-primary,
+  a.button.button-primary,
+  button.button-primary,
+  [type=button].button-primary,
+  [type=submit].button-primary {
     background-color: #0074D9;
     color: #FFFFFF; }
-    .btn.btn-primary:hover {
+    .button.button-primary:hover,
+    a.button.button-primary:hover,
+    button.button-primary:hover,
+    [type=button].button-primary:hover,
+    [type=submit].button-primary:hover {
       background-color: #0059a6; }
-  .btn.btn-active {
+  .button.button-active,
+  a.button.button-active,
+  button.button-active,
+  [type=button].button-active,
+  [type=submit].button-active {
     background-color: #2ECC40;
     color: #FFFFFF; }
-    .btn.btn-active:hover {
+    .button.button-active:hover,
+    a.button.button-active:hover,
+    button.button-active:hover,
+    [type=button].button-active:hover,
+    [type=submit].button-active:hover {
       background-color: #25a233; }
-  .btn.btn-danger {
+  .button.button-danger,
+  a.button.button-danger,
+  button.button-danger,
+  [type=button].button-danger,
+  [type=submit].button-danger {
     background-color: #FF4136;
     color: #FFFFFF; }
-    .btn.btn-danger:hover {
+    .button.button-danger:hover,
+    a.button.button-danger:hover,
+    button.button-danger:hover,
+    [type=button].button-danger:hover,
+    [type=submit].button-danger:hover {
       background-color: #ff1103; }
-  .btn[disabled] {
+  .button[disabled],
+  a.button[disabled],
+  button[disabled],
+  [type=button][disabled],
+  [type=submit][disabled] {
     background-color: #eee;
     color: #ccc;
     cursor: default; }
-  .btn .material-icons:not(:only-child) {
+  .button .material-icons:not(:only-child),
+  a.button .material-icons:not(:only-child),
+  button .material-icons:not(:only-child),
+  [type=button] .material-icons:not(:only-child),
+  [type=submit] .material-icons:not(:only-child) {
     margin-right: 0.5rem;
     /* 8px */ }
-  .btn .material-icons {
+  .button .material-icons,
+  a.button .material-icons,
+  button .material-icons,
+  [type=button] .material-icons,
+  [type=submit] .material-icons {
     font-size: 18px;
     line-height: 2rem;
     /* 32px */ }

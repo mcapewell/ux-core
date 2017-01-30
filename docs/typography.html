@@ -11,7 +11,7 @@
     </head>
     <body class="ux-core">
         <div class="row">
-            <div class="column-25">
+            <div class="small-25">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="typography.html">Typography</a></li>
@@ -19,11 +19,12 @@
                     <li><a href="button.html">Button</a></li>
                 </ul>
             </div>
-            <div class="column-75">
+            <div class="small-75">
                 <h1>Typography</h1>
-                <p>Some blurb about typography...</p>
+                <p>By default, UX Core uses the 'Segoe UI' font where available e.g. Windows 10. It falls back to the current system font for other operating systems, e.g. MacOS, iOS and Android.</p>
                 <h2>Examples</h2>
                 <h3>Headings</h3>
+                <p>In addition to font sizing, <code class="language-html">&lt;h1></code> and <code class="language-html">&lt;h2></code> headings also have a feint bottom border.</p>
                 <section class="example">
                     <h1>Heading 1</h1>
                     <h2>Heading 2</h2>
@@ -31,17 +32,35 @@
                     <h4>Heading 4</h4>
                     <h5>Heading 5</h5>
                     <h6>Heading 6</h6>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;h1>Heading 1&lt;/h1>
+&lt;h2>Heading 2&lt;/h2>
+&lt;h3>Heading 3&lt;/h3>
+&lt;h4>Heading 4&lt;/h4>
+&lt;h5>Heading 5&lt;/h5>
+&lt;h6>Heading 6&lt;/h6></code></pre>
                 </section>
                 <h3>Body</h3>
                 <section class="example">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...
+&lt;/p></code></pre>
                 </section>
                 <h3>Bold, Italics and Links</h3>
                 <section class="example">
                     <p>Lorem <strong>ipsum dolor</strong> sit amet, <em>consectetur adipiscing</em> elit, <a href="#">sed do eiusmod</a> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;p>
+    Lorem &lt;strong>ipsum dolor&lt;/strong> sit amet, &lt;em>consectetur adipiscing&lt;/em> elit, &lt;a href="#">sed do eiusmod&lt;/a> tempor incididunt...
+&lt;/p></code></pre>
+                </section>
+                <h3>Japanese Font</h3>
+                <p>For Japanese OS, the 'YuGothic' font is used, where available, in favor of 'Segoe UI'.</p>
+                <section class="example">
+                    <p lang="ja-JP">私は事実つい同じ呈学といったのの以上がするんませ。どうしても事実に下宿人はどうしてもどんな発展たましだけに眺めていだろがは批評しうないて、しっかりにはなっずないないた。</p>
+                    <p lang="ja-JP">先生に突き破るなけれのはとうてい当時でとやかくだますた。たとい大森さんが刺戟腹の中いろいろ著作でいうな獄どんな世の中私か奔走にというお変化たうなないば、そのほかはそこか状態支をして、嘉納君のものに人のあなたと同時にご約束と向けて私獄にご卒業を叫びようにざっとご安心にできるましでば、むしろはなはだ意味にしたといた事に縛りつけだなけれ。もしくはしかしお一口をする気もそれだけ新たと描いでが、その個性をは持っでてという自分が切り上げてしまえないだろ。どんな以上世界中の限りこの社会はあなた中をえですかと久原さんに勤まりですな、辺の場合あっという大落第たでしょないから、一般の後をただに事実しもの招きにほか申しが行くから、そうの今が考えてそのところがざっと解りあるだといううものなが、なしでうてそうお心含まなのうないない。</p>
+                    <pre><code class="language-html">&lt;html lang="ja-JP">
+    ...
+&lt;/html></code></pre>
                 </section>
             </div>
         </div>

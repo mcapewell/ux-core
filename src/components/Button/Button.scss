@@ -2,9 +2,15 @@
     display: flex;
 }
 
-.btn {
+.button,
+a.button,
+button,
+[type=button],
+[type=submit] {
     @include border-radius(2px);
     display: inline-flex;
+    //display: inline-block;
+    //display: flex;
     border: none;
     height: 2rem; /* 32px */
     line-height: 2rem; /* 32px */
@@ -16,20 +22,22 @@
     font-family: inherit;
     font-weight: 400;
 
+    vertical-align: middle;
+
     @include setBgColorAndHover($ux-core-silver);
     color: $ux-core-black;
 
-    &.btn-primary {
+    &.button-primary {
         @include setBgColorAndHover($ux-core-blue);
         color: $ux-core-white;
     }
 
-    &.btn-active {
+    &.button-active {
         @include setBgColorAndHover($ux-core-green);
         color: $ux-core-white;
     }
 
-    &.btn-danger {
+    &.button-danger {
         @include setBgColorAndHover($ux-core-red);
         color: $ux-core-white;
     }

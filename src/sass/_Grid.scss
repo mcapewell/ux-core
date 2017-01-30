@@ -19,6 +19,13 @@ $margin-bottom: 1rem;
   margin-bottom: $margin-bottom;
 }
 
+
+// Mobile column view
+%full-width-column {
+    width: 100%;
+    margin-bottom: $margin-bottom;
+}
+
 .row {
   @extend %row-margin;
   &::before,
@@ -29,10 +36,41 @@ $margin-bottom: 1rem;
   }
 }
 
+/* Mobile view */
+
 @each $entry in $grid {
+    .small-#{floor($entry)},
+    .large-#{floor($entry)} {
+        @extend %full-width-column;
+        @extend %column-padding;
+    }
     .column-#{floor($entry)} {
         width: percentage($entry) * 0.01;
         float: left;
         @extend %column-padding;
     }
+}
+
+/* Small screen breakpoint */
+
+@include small-breakpoint {
+  @each $entry in $grid {
+    .small-#{floor($entry)} {
+      width: percentage($entry) * 0.01;
+      float: left;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Large screen breakpoint */
+
+@include large-breakpoint {
+  @each $entry in $grid {
+    .large-#{floor($entry)} {
+      width: percentage($entry) * 0.01;
+      float: left;
+      margin-bottom: 0;
+    }
+  }
 }

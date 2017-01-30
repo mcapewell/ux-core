@@ -2,3 +2,17 @@
     border-radius: $radius;
     background-clip: padding-box;
 }
+
+// Mobile first layout
+@mixin small-breakpoint {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+// Break on desktop
+@mixin large-breakpoint {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
