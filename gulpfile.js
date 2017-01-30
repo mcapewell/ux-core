@@ -5,7 +5,8 @@ var webserver = require('gulp-webserver');
 gulp.task('sass', function() {
     gulp.src('./src/sass/UXCore.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('webserver', function() {
@@ -22,7 +23,8 @@ gulp.task('default', ['sass', 'webserver'], function() {
 
 gulp.task('copyfonts', function() {
     gulp.src('./node_modules/material-design-icons/iconfont/**/*.{eot,woff2,woff,ttf}')
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('copyprism', function() {
