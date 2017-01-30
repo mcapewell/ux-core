@@ -27,8 +27,8 @@ gulp.task('copyfonts', function() {
 
 gulp.task('copyprism', function() {
     gulp.src('./node_modules/prismjs/themes/prism.css')
-        .pipe(gulp.dest('./docs'));
+        .pipe(gulp.dest('./docs/prism'));
     
     gulp.src('./node_modules/prismjs/prism.js')
-        .pipe(gulp.dest('./docs'));
+        .pipe(gulp.dest('./docs/prism'));
 });
