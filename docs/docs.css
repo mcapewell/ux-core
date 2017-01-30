@@ -1,0 +1,16 @@
+body {
+}
+
+section.example pre {
+    margin-top: 1rem;
+}
+
+.docs-grid-column {
+    background-color: #004578;
+    color: #ffffff;
+}
+
+.docs-grid-column-alt {
+    background-color: #0074D9;
+    color: #ffffff;
+}

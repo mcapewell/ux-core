@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Button</title>
+        <link rel="stylesheet" href="../dist/uxcore.css">
+        <link rel="stylesheet" href="docs.css">
+        <link rel="stylesheet" href="prism.css">
+    </head>
+    <body class="ux-core">
+        <div class="row">
+            <div class="column-25">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="button.html">Button</a></li>
+                </ul>
+            </div>
+            <div class="column-75">
+                <h1>Button</h1>
+                <p>Some blurb about buttons...</p>
+                <h2>Examples</h2>
+                <h3>Default Buttons</h3>
+                <section class="example">
+                    <div class="btn-list">
+                        <a class="btn" href="#">Link</a>
+                        <button class="btn">Button</button>
+                        <input class="btn" type="button" value="Input">
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
+                    <pre><code class="language-html">&lt;div class="btn-list">
+    &lt;a class="btn" href="#">Link&lt;/a>
+    &lt;button class="btn">Button&lt;/button>
+    &lt;input class="btn" type="button" value="Input">
+    &lt;input class="btn" type="submit" value="Submit">
+&lt;/div></code></pre>
+                </section>
+                <h3>Different Styles</h3>
+                <section class="example">
+                    <div class="btn-list">
+                        <button class="btn"><i class="material-icons">menu</i><span>Icon</span></button>
+                        <button class="btn"><i class="material-icons">close</i></button>
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-active">Active</button>
+                        <button class="btn" disabled>Disabled</button>
+                        <button class="btn btn-danger"><i class="material-icons">delete_forever</i><span>Danger</span></button>
+                        <button class="btn">Japanese ボタン</button>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="btn-list">
+    &lt;button class="btn">&lt;i class="material-icons">menu&lt;/i>&lt;span>Icon&lt;/span>&lt;/button>
+    &lt;button class="btn">&lt;i class="material-icons">close&lt;/i>&lt;/button>
+    &lt;button class="btn btn-primary">Primary&lt;/button>
+    &lt;button class="btn btn-active">Active&lt;/button>
+    &lt;button class="btn" disabled>Disabled&lt;/button>
+    &lt;button class="btn btn-danger">&lt;i class="material-icons">delete_forever&lt;/i>&lt;span>Danger&lt;/span>&lt;/button>
+    &lt;button class="btn">Japanese ボタン&lt;/button>
+&lt;/div></code></pre>
+                </section>
+                <h3>Japanese Specific Font</h3>
+                <p><em>Is this actually any better/easier to read?</em></p>
+                <section class="example">
+                    <div lang="ja-JP" class="btn-list">
+                        <button class="btn">Japanese ボタン</button>
+                    </div>
+                    <pre><code class="language-html">&lt;div lang="ja-JP" class="btn-list">
+    &lt;button class="btn">Japanese ボタン&lt;/button>
+&lt;/div></code></pre>
+                </section>
+            </div>
+        </div>
+        <script src="prism.js"></script>
+    </body>
+</html>

@@ -12,8 +12,7 @@ gulp.task('webserver', function() {
     gulp.src('.')
         .pipe(webserver({
             livereload: true,
-            fallback: '/src/docs/index.html',
-            open: true
+            open: '/docs'
         }));
 });
 
@@ -24,4 +23,12 @@ gulp.task('default', ['sass', 'webserver'], function() {
 gulp.task('copyfonts', function() {
     gulp.src('./node_modules/material-design-icons/iconfont/**/*.{eot,woff2,woff,ttf}')
         .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('copyprism', function() {
+    gulp.src('./node_modules/prismjs/themes/prism.css')
+        .pipe(gulp.dest('./docs'));
+    
+    gulp.src('./node_modules/prismjs/prism.js')
+        .pipe(gulp.dest('./docs'));
 });
