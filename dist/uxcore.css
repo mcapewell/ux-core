@@ -700,7 +700,7 @@ h5, h6 {
     float: left;
     margin-bottom: 0; } }
 
-.btn-list {
+.button-list {
   display: flex; }
 
 .button,
@@ -781,18 +781,52 @@ button,
     background-color: #eee;
     color: #ccc;
     cursor: default; }
-  .button .material-icons:not(:only-child),
-  a.button .material-icons:not(:only-child),
-  button .material-icons:not(:only-child),
-  [type=button] .material-icons:not(:only-child),
-  [type=submit] .material-icons:not(:only-child) {
+  .button .material-icons:not(:only-child):first-child,
+  a.button .material-icons:not(:only-child):first-child,
+  button .material-icons:not(:only-child):first-child,
+  [type=button] .material-icons:not(:only-child):first-child,
+  [type=submit] .material-icons:not(:only-child):first-child {
     margin-right: 0.5rem;
+    /* 8px */ }
+  .button .material-icons:not(:only-child):last-child,
+  a.button .material-icons:not(:only-child):last-child,
+  button .material-icons:not(:only-child):last-child,
+  [type=button] .material-icons:not(:only-child):last-child,
+  [type=submit] .material-icons:not(:only-child):last-child {
+    margin-left: 0.5rem;
     /* 8px */ }
   .button .material-icons,
   a.button .material-icons,
   button .material-icons,
   [type=button] .material-icons,
   [type=submit] .material-icons {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2rem;
     /* 32px */ }
+
+.button-group {
+  display: flex;
+  margin-right: 0.5rem; }
+  .button-group .button,
+  .button-group a.button,
+  .button-group button {
+    border-radius: 0;
+    background-clip: padding-box;
+    margin-right: 0;
+    border-right: 1px solid #d0d0d0; }
+  .button-group .button.button-active,
+  .button-group a.button.button-active,
+  .button-group button.button-active {
+    border-right-color: #29b739; }
+  .button-group :first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-clip: padding-box; }
+  .button-group :last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-clip: padding-box;
+    border-right: none; }
+
+.button-toolbar {
+  display: flex; }

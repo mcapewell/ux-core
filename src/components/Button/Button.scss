@@ -1,4 +1,4 @@
-.btn-list {
+.button-list {
     display: flex;
 }
 
@@ -7,7 +7,7 @@ a.button,
 button,
 [type=button],
 [type=submit] {
-    @include border-radius(2px);
+    @include border-radius($button-border-radius);
     display: inline-flex;
     //display: inline-block;
     //display: flex;
@@ -48,12 +48,16 @@ button,
         cursor: default;
     }
 
-    .material-icons:not(:only-child) {
+    .material-icons:not(:only-child):first-child {
         margin-right: 0.5rem; /* 8px */
     }
 
+    .material-icons:not(:only-child):last-child {
+        margin-left: 0.5rem; /* 8px */
+    }
+
     .material-icons {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 2rem; /* 32px */
     }
 }

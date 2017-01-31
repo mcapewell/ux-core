@@ -3,6 +3,18 @@
     background-clip: padding-box;
 }
 
+@mixin border-radius-left($radius) {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    background-clip: padding-box;
+}
+
+@mixin border-radius-right($radius) {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    background-clip: padding-box;
+}
+
 // Mobile first layout
 @mixin small-breakpoint {
     @media (min-width: 600px) {

@@ -1,0 +1,31 @@
+.button-group {
+    display: flex;
+    margin-right: 0.5rem;
+
+    .button,
+    a.button,
+    button {
+        @include border-radius(0);
+        margin-right: 0;
+        border-right: 1px solid darken($ux-core-silver, 5%);
+    }
+
+    .button.button-active,
+    a.button.button-active,
+    button.button-active {
+        border-right-color: darken($ux-core-green, 5%);
+    }
+
+    :first-child {
+        @include border-radius-left($button-border-radius);
+    }
+
+    :last-child {
+        @include border-radius-right($button-border-radius);
+        border-right: none;
+    }
+}
+
+.button-toolbar {
+    display: flex;
+}
