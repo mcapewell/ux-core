@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Table</title>
+        <link rel="stylesheet" href="../dist/uxcore.css">
+    </head>
+    <body class="ux-core">
+        <div class="row">
+            <div class="column-100" style="margin-bottom: 1rem;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-sortable">#</th>
+                            <th class="table-sortable table-sorted-down">Scheduled At</th>
+                            <th class="table-sortable">Duration</th>
+                            <th class="table-sortable">Service Location</th>
+                            <th class="table-sortable">On-site Contact</th>
+                            <th class="table-sortable">Booked At</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>16/02/2014 15:00</td>
+                            <td>3 hours</td>
+                            <td>Jonestown</td>
+                            <td>Gabriella Marques</td>
+                            <td>16/02/2014 15:14</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>16/02/2014 10:00</td>
+                            <td>30 minutes</td>
+                            <td>New Haven</td>
+                            <td>Adam Smith</td>
+                            <td>16/02/2014 10:19</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>15/02/2014 21:00</td>
+                            <td>45 minutes</td>
+                            <td>Port of Questo</td>
+                            <td>Franny Wheeler</td>
+                            <td>15/02/2014 21:45</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>15/02/2014 15:00</td>
+                            <td>2 hours</td>
+                            <td>New Stanford</td>
+                            <td>Franco Sebastian</td>
+                            <td>15/02/2014 15:49</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>15/02/2014 11:30</td>
+                            <td>1 hour</td>
+                            <td>Forth Width</td>
+                            <td>Haraldur Thorleifsson</td>
+                            <td>15/02/2014 11:37</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column-100" style="display: flex; justify-content: center;">
+                <div class="button-group">
+                    <button disabled><i class="material-icons">chevron_left</i><span>Previous</span></button>
+                    <button class="button-active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>99</button>
+                    <button><span>Next</span><i class="material-icons">chevron_right</i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
