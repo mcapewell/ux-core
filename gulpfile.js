@@ -34,3 +34,8 @@ gulp.task('copyprism', function() {
     gulp.src('./node_modules/prismjs/prism.js')
         .pipe(gulp.dest('./docs/prism'));
 });
+
+gulp.task('copyvue', function () {
+    gulp.src('./node_modules/vue/dist/vue.min.js')
+        .pipe(gulp.dest('./docs/vue'));
+});
