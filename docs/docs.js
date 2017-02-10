@@ -6,6 +6,7 @@ Vue.component('docs-menu', {
         <li><a href="button.html">Button</a></li>\
         <li><a href="button-group.html">Button Group</a></li>\
         <li><a href="table.html">Table</a></li>\
+        <li><a href="form.html">Form</a></li>\
     </ul>'
 });
 

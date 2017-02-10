@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form</title>
+        <link rel="stylesheet" href="dist/uxcore.css">
+        <link rel="stylesheet" href="docs.css">
+        <link rel="stylesheet" href="prism/prism.css">
+    </head>
+    <body class="ux-core">
+        <div class="row" id="app">
+            <div class="small-25">
+                <docs-menu></docs-menu>
+            </div>
+            <div class="small-75">
+                <h1>Form</h1>
+                <p>Some blurb...</p>
+                <h2>Examples</h2>
+                <h3>Text Field</h3>
+                <div class="row">
+                    <div class="column-75">
+                <section class="example">
+                    <div class="textfield">
+                        <label>Default TextField</label>
+                        <input type="text" value="Some value" />
+                    </div>
+                    <div class="textfield">
+                        <label>TextField with Placeholder</label>
+                        <input type="text" placeholder="Placeholder" value="" />
+                    </div>
+                    <div class="textfield">
+                        <label>Disabled TextField</label>
+                        <input type="text" value="Some value" disabled />
+                    </div>
+                    <div class="textfield">
+                        <label>Multiline TextField</label>
+                        <textarea rows="3">Some text</textarea>
+                    </div>
+                    <div class="textfield">
+                        <label>Disabled Multiline TextField</label>
+                        <textarea rows="3" disabled>Some text</textarea>
+                    </div>
+                    <pre><code class="language-html"></code></pre>
+                </section>
+                    </div>
+                </div>
+                <h3>Select</h3>
+                <section class="example">
+                    <div class="select">
+                        <label>Default Select</label>
+                        <select>
+                            <option>Please select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <label>Disabled Select</label>
+                        <select disabled>
+                            <option>Please select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </select>
+                    </div>
+                    <pre><code class="language-html"></code></pre>
+                </section>
+                <h3>Checkbox</h3>
+                <section class="example">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" /> Item 1
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" checked /> Item 2 - selected
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" disabled /> Item 3 - disabled
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" disabled checked /> Item 4 - selected and disabled
+                        </label>
+                    </div>
+                    <pre><code class="language-html"></code></pre>
+                </section>
+                <h3>Radio</h3>
+                <section class="example">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="test-radio" checked /> Option 1 - default
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="test-radio" /> Option 2
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="test-radio" disabled /> Option 3 - disabled
+                        </label>
+                    </div>
+                    <pre><code class="language-html"></code></pre>
+                </section>
+                <h3>Other Types</h3>
+                <section class="example">
+                    <div class="textfield">
+                        <label>Password</label>
+                        <input type="password" value="Some value" />
+                    </div>
+                    <div class="textfield">
+                        <label>Date</label>
+                        <input type="date" value="" />
+                    </div>
+                    <div class="textfield">
+                        <label>Time</label>
+                        <input type="time" value="" />
+                    </div>
+                    <pre><code class="language-html"></code></pre>
+                </section>
+            </div>
+        </div>
+        <script src="prism/prism.js"></script>
+        <script src="vue/vue.min.js"></script>
+        <script src="docs.js"></script>
+    </body>
+</html>

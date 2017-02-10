@@ -1,0 +1,62 @@
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=time],
+textarea,
+select {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    @include border-radius($button-border-radius);
+    border: solid 1px $ux-core-gray;
+    font-family: inherit;
+    font-weight: 400;
+
+    &:hover {
+        border-color: $ux-core-black;
+    }
+
+	&:focus,
+    &:active {
+        border-color: $ux-core-blue;
+    }
+
+    &[disabled] {
+        background-color: #eee;
+        color: #ccc;
+        border-color: #ccc;
+        cursor: default;
+    }
+}
+
+input[type=checkbox] {
+    margin-right: 0.5rem;
+}
+
+/* For some reason, these have to be seperate for Edge to work */
+/* Chrome/Safari/Opera/Firefox */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder {
+    color: $ux-core-gray;
+}
+/* IE */
+:-ms-input-placeholder {
+    color: $ux-core-gray;
+}
+/* Edge */
+::-ms-input-placeholder {
+    color: $ux-core-gray;
+}
+
+/* Fixed disabled select in Edge */
+[disabled]::-ms-expand {
+    background-color: #eee;
+}

@@ -42,6 +42,12 @@ button,
         color: $ux-core-white;
     }
 
+    &.button-full {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
     &[disabled] {
         background-color: #eee;
         color: #ccc;

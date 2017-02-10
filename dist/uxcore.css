@@ -773,6 +773,14 @@ button,
     [type=button].button-danger:hover,
     [type=submit].button-danger:hover {
       background-color: #ff1103; }
+  .button.button-full,
+  a.button.button-full,
+  button.button-full,
+  [type=button].button-full,
+  [type=submit].button-full {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem; }
   .button[disabled],
   a.button[disabled],
   button[disabled],
@@ -854,3 +862,75 @@ thead th {
   thead th.table-sortable:hover {
     cursor: pointer;
     border-bottom-color: #AAAAAA; }
+
+label {
+  display: block;
+  margin-bottom: 0.25rem; }
+
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=time],
+textarea,
+select {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  border-radius: 2px;
+  background-clip: padding-box;
+  border: solid 1px #AAAAAA;
+  font-family: inherit;
+  font-weight: 400; }
+  input[type=text]:hover,
+  input[type=password]:hover,
+  input[type=date]:hover,
+  input[type=time]:hover,
+  textarea:hover,
+  select:hover {
+    border-color: #111111; }
+  input[type=text]:focus, input[type=text]:active,
+  input[type=password]:focus,
+  input[type=password]:active,
+  input[type=date]:focus,
+  input[type=date]:active,
+  input[type=time]:focus,
+  input[type=time]:active,
+  textarea:focus,
+  textarea:active,
+  select:focus,
+  select:active {
+    border-color: #0074D9; }
+  input[type=text][disabled],
+  input[type=password][disabled],
+  input[type=date][disabled],
+  input[type=time][disabled],
+  textarea[disabled],
+  select[disabled] {
+    background-color: #eee;
+    color: #ccc;
+    border-color: #ccc;
+    cursor: default; }
+
+input[type=checkbox] {
+  margin-right: 0.5rem; }
+
+/* For some reason, these have to be seperate for Edge to work */
+/* Chrome/Safari/Opera/Firefox */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder {
+  color: #AAAAAA; }
+
+/* IE */
+:-ms-input-placeholder {
+  color: #AAAAAA; }
+
+/* Edge */
+::-ms-input-placeholder {
+  color: #AAAAAA; }
+
+/* Fixed disabled select in Edge */
+[disabled]::-ms-expand {
+  background-color: #eee; }
