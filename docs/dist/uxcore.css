@@ -700,6 +700,30 @@ h5, h6 {
     float: left;
     margin-bottom: 0; } }
 
+div.alert {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 0.25rem solid #ccc;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #eee; }
+  div.alert.alert-success {
+    color: #1b7926;
+    border-left-color: #2ECC40;
+    background-color: #d1f5d5; }
+  div.alert.alert-warning {
+    color: #998400;
+    border-left-color: #FFDC00;
+    background-color: #fff8cc; }
+  div.alert.alert-error {
+    color: #cf0b00;
+    border-left-color: #FF4136;
+    background-color: #ffd2cf; }
+  div.alert.alert-info {
+    color: #003d73;
+    border-left-color: #0074D9;
+    background-color: #d9edff; }
+
 .button-list {
   display: flex; }
 

@@ -17,7 +17,8 @@ Vue.component('docs-menu', {
                 { url: "button-group.html", title: "Button Group" },
                 { url: "table.html", title: "Table" },
                 { url: "form.html", title: "Form" },
-                { url: "menu.html", title: "Menu" }
+                { url: "menu.html", title: "Menu" },
+                { url: "alert.html", title: "Alert" }
             ]
         }
     }

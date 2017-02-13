@@ -1,0 +1,31 @@
+div.alert {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-left: 0.25rem solid $ux-core-disabled-color;
+    @include border-radius($button-border-radius);
+    background-color: $ux-core-disabled-background;
+
+    &.alert-success {
+        color: darken($ux-core-green, 20%);
+        border-left-color: $ux-core-green;
+        background-color: lighten($ux-core-green, 40%);
+    }
+
+    &.alert-warning {
+        color: darken($ux-core-yellow, 20%);
+        border-left-color: $ux-core-yellow;
+        background-color: lighten($ux-core-yellow, 40%);
+    }
+
+    &.alert-error {
+        color: darken($ux-core-red, 20%);
+        border-left-color: $ux-core-red;
+        background-color: lighten($ux-core-red, 30%);
+    }
+
+    &.alert-info {
+        color: darken($ux-core-blue, 20%);
+        border-left-color: $ux-core-blue;
+        background-color: lighten($ux-core-blue, 50%);
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alert</title>
+        <link rel="stylesheet" href="dist/uxcore.css">
+        <link rel="stylesheet" href="prism/prism.css">
+        <link rel="stylesheet" href="docs.css">
+    </head>
+    <body class="ux-core">
+        <div class="row" id="app">
+            <div class="small-25">
+                <docs-menu current-page="alert.html"></docs-menu>
+            </div>
+            <div class="small-75">
+                <h1>Alert</h1>
+                <p>Alerts are full width, contextual feedback messages for the user.</p>
+                <h2>Examples</h2>
+                <h3>Basic Alerts</h3>
+                <section class="example">
+                    <div class="alert">Some default alert message</div>
+                    <div class="alert alert-success">Some success alert message</div>
+                    <div class="alert alert-warning">Some warning alert message</div>
+                    <div class="alert alert-error">Some error alert message</div>
+                    <div class="alert alert-info">Some info alert message</div>
+                    <pre><code class="language-html">&lt;div class="alert">...&lt;/div>
+&lt;div class="alert alert-success">...&lt;/div>
+&lt;div class="alert alert-warning">...&lt;/div>
+&lt;div class="alert alert-error">...&lt;/div>
+&lt;div class="alert alert-info">...&lt;/div></code></pre>
+                </section>
+            </div>
+        </div>
+        <script src="prism/prism.js"></script>
+        <script src="vue/vue.min.js"></script>
+        <script src="docs.js"></script>
+    </body>
+</html>
