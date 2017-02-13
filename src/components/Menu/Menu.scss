@@ -1,0 +1,24 @@
+ul.menu {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5rem 0.5rem;
+            border-left: 0.25rem solid transparent;
+
+            &:hover {
+                background-color: $ux-core-disabled-background;
+                border-left-color: $ux-core-disabled-color;
+            }
+        }
+
+        &.active a {
+            border-left-color: $ux-core-green;
+            font-weight: 400;
+        }
+    }
+}

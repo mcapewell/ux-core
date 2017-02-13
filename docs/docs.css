@@ -14,3 +14,8 @@ section.example pre {
     background-color: #0074D9;
     color: #ffffff;
 }
+
+:not(pre) > code[class*='language-'], pre[class*='language-'] {
+    background: #ffffff;
+    border: 1px solid #eee;
+}

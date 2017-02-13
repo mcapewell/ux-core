@@ -49,8 +49,8 @@ button,
     }
 
     &[disabled] {
-        background-color: #eee;
-        color: #ccc;
+        background-color: $ux-core-disabled-background;
+        color: $ux-core-disabled-color;
         cursor: default;
     }
 

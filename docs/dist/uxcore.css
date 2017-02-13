@@ -839,6 +839,22 @@ button,
 .button-toolbar {
   display: flex; }
 
+ul.menu {
+  list-style: none;
+  padding-left: 0; }
+  ul.menu li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 0.5rem;
+    border-left: 0.25rem solid transparent; }
+    ul.menu li a:hover {
+      background-color: #eee;
+      border-left-color: #ccc; }
+  ul.menu li.active a {
+    border-left-color: #2ECC40;
+    font-weight: 400; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

@@ -8,13 +8,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2em;
     padding-bottom: 0.3em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $ux-core-disabled-background;
 }
 
 h2 {
     font-size: 1.5em;
     padding-bottom: 0.3em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $ux-core-disabled-background;
 }
 
 h3 {

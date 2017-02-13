@@ -29,9 +29,9 @@ select {
     }
 
     &[disabled] {
-        background-color: #eee;
-        color: #ccc;
-        border-color: #ccc;
+        background-color: $ux-core-disabled-background;
+        color: $ux-core-disabled-color;
+        border-color: $ux-core-disabled-color;
         cursor: default;
     }
 }
@@ -58,5 +58,5 @@ input[type=checkbox] {
 
 /* Fixed disabled select in Edge */
 [disabled]::-ms-expand {
-    background-color: #eee;
+    background-color: $ux-core-disabled-background;
 }
