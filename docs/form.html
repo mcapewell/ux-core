@@ -16,39 +16,58 @@
             </div>
             <div class="small-75">
                 <h1>Form</h1>
-                <p>Some blurb...</p>
+                <p>Default forms will have full-width, block level labels, inputs, selects, and textareas.</p>
                 <h2>Examples</h2>
                 <h3>Text Field</h3>
                 <div class="row">
                     <div class="column-75">
-                <section class="example">
-                    <div class="textfield">
-                        <label>Default TextField</label>
-                        <input type="text" value="Some value" />
-                    </div>
-                    <div class="textfield">
-                        <label>TextField with Placeholder</label>
-                        <input type="text" placeholder="Placeholder" value="" />
-                    </div>
-                    <div class="textfield">
-                        <label>Disabled TextField</label>
-                        <input type="text" value="Some value" disabled />
-                    </div>
-                    <div class="textfield">
-                        <label>Multiline TextField</label>
-                        <textarea rows="3">Some text</textarea>
-                    </div>
-                    <div class="textfield">
-                        <label>Disabled Multiline TextField</label>
-                        <textarea rows="3" disabled>Some text</textarea>
-                    </div>
-                    <pre><code class="language-html"></code></pre>
-                </section>
+                        <section class="example">
+                            <div>
+                                <label>Default TextField</label>
+                                <input type="text" value="Some value" />
+                            </div>
+                            <div>
+                                <label>TextField with Placeholder</label>
+                                <input type="text" placeholder="Placeholder" value="" />
+                            </div>
+                            <div>
+                                <label>Disabled TextField</label>
+                                <input type="text" value="Some value" disabled />
+                            </div>
+                            <div>
+                                <label>Multiline TextField</label>
+                                <textarea rows="3">Some text</textarea>
+                            </div>
+                            <div>
+                                <label>Disabled Multiline TextField</label>
+                                <textarea rows="3" disabled>Some text</textarea>
+                            </div>
+                            <pre><code class="language-html">&lt;div>
+    &lt;label>Default TextField&lt;/label>
+    &lt;input type="text" value="Some value" />
+&lt;/div>
+&lt;div>
+    &lt;label>TextField with Placeholder&lt;/label>
+    &lt;input type="text" placeholder="Placeholder" value="" />
+&lt;/div>
+&lt;div>
+    &lt;label>Disabled TextField&lt;/label>
+    &lt;input type="text" value="Some value" disabled />
+&lt;/div>
+&lt;div>
+    &lt;label>Multiline TextField&lt;/label>
+    &lt;textarea rows="3">Some text&lt;/textarea>
+&lt;/div>
+&lt;div>
+    &lt;label>Disabled Multiline TextField&lt;/label>
+    &lt;textarea rows="3" disabled>Some text&lt;/textarea>
+&lt;/div></code></pre>
+                        </section>
                     </div>
                 </div>
                 <h3>Select</h3>
                 <section class="example">
-                    <div class="select">
+                    <div>
                         <label>Default Select</label>
                         <select>
                             <option>Please select</option>
@@ -56,7 +75,7 @@
                             <option>Option 2</option>
                         </select>
                     </div>
-                    <div class="select">
+                    <div>
                         <label>Disabled Select</label>
                         <select disabled>
                             <option>Please select</option>
@@ -64,66 +83,125 @@
                             <option>Option 2</option>
                         </select>
                     </div>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;div>
+    &lt;label>Default Select&lt;/label>
+    &lt;select>
+        &lt;option>Please select&lt;/option>
+        &lt;option>Option 1&lt;/option>
+        &lt;option>Option 2&lt;/option>
+    &lt;/select>
+&lt;/div>
+&lt;div>
+    &lt;label>Disabled Select&lt;/label>
+    &lt;select disabled>
+        &lt;option>Please select&lt;/option>
+        &lt;option>Option 1&lt;/option>
+        &lt;option>Option 2&lt;/option>
+    &lt;/select>
+&lt;/div></code></pre>
                 </section>
                 <h3>Checkbox</h3>
                 <section class="example">
-                    <div class="checkbox">
+                    <div>
                         <label>
                             <input type="checkbox" /> Item 1
                         </label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <label>
                             <input type="checkbox" checked /> Item 2 - selected
                         </label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <label>
                             <input type="checkbox" disabled /> Item 3 - disabled
                         </label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <label>
                             <input type="checkbox" disabled checked /> Item 4 - selected and disabled
                         </label>
                     </div>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;div>
+    &lt;label>
+        &lt;input type="checkbox" /> Item 1
+    &lt;/label>
+&lt;/div>
+&lt;div>
+    &lt;label>
+        &lt;input type="checkbox" checked /> Item 2 - selected
+    &lt;/label>
+&lt;/div>
+&lt;div>
+    &lt;label>
+        &lt;input type="checkbox" disabled /> Item 3 - disabled
+    &lt;/label>
+&lt;/div>
+&lt;div>
+    &lt;label>
+        &lt;input type="checkbox" disabled checked /> Item 4 - selected and disabled
+    &lt;/label>
+&lt;/div></code></pre>
                 </section>
                 <h3>Radio</h3>
                 <section class="example">
-                    <div class="radio">
+                    <div>
                         <label>
                             <input type="radio" name="test-radio" checked /> Option 1 - default
                         </label>
                     </div>
-                    <div class="radio">
+                    <div>
                         <label>
                             <input type="radio" name="test-radio" /> Option 2
                         </label>
                     </div>
-                    <div class="radio">
+                    <div>
                         <label>
                             <input type="radio" name="test-radio" disabled /> Option 3 - disabled
                         </label>
                     </div>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;div>
+    &lt;label>
+        &lt;input type="radio" name="test-radio" checked /> Option 1 - default
+    &lt;/label>
+&lt;/div>
+&lt;div>
+    &lt;label>
+        &lt;input type="radio" name="test-radio" /> Option 2
+    &lt;/label>
+&lt;/div>
+&lt;div>
+    &lt;label>
+        &lt;input type="radio" name="test-radio" disabled /> Option 3 - disabled
+    &lt;/label>
+&lt;/div></code></pre>
                 </section>
                 <h3>Other Types</h3>
                 <section class="example">
-                    <div class="textfield">
+                    <div>
                         <label>Password</label>
                         <input type="password" value="Some value" />
                     </div>
-                    <div class="textfield">
+                    <div>
                         <label>Date</label>
                         <input type="date" value="" />
                     </div>
-                    <div class="textfield">
+                    <div>
                         <label>Time</label>
                         <input type="time" value="" />
                     </div>
-                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-html">&lt;div>
+    &lt;label>Password&lt;/label>
+    &lt;input type="password" value="Some value" />
+&lt;/div>
+&lt;div>
+    &lt;label>Date&lt;/label>
+    &lt;input type="date" value="" />
+&lt;/div>
+&lt;div>
+    &lt;label>Time&lt;/label>
+    &lt;input type="time" value="" />
+&lt;/div></code></pre>
                 </section>
             </div>
         </div>
