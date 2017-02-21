@@ -18,7 +18,8 @@ Vue.component('docs-menu', {
                 { url: "table.html", title: "Table" },
                 { url: "form.html", title: "Form" },
                 { url: "menu.html", title: "Menu" },
-                { url: "alert.html", title: "Alert" }
+                { url: "alert.html", title: "Alert" },
+                { url: "topbar.html", title: "Topbar" }
             ]
         }
     }
