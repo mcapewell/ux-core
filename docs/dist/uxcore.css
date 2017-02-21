@@ -879,6 +879,27 @@ ul.menu {
     border-left-color: #2ECC40;
     font-weight: 400; }
 
+.sidebar {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 100%;
+  box-shadow: 0 0 4px #c1c1c1; }
+  .sidebar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 3rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .sidebar a:hover {
+      background-color: #5e5e5e; }
+    .sidebar a.sidebar-active {
+      background-color: #FFFFFF;
+      color: #111111; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -982,7 +1003,6 @@ input[type=checkbox] {
   display: flex;
   box-shadow: 0 0 4px #c1c1c1; }
   .topbar .topbar-logo {
-    background-color: yellow;
     display: flex;
     align-items: center; }
     .topbar .topbar-logo a {

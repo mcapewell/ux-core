@@ -1,0 +1,27 @@
+.sidebar {
+    background-color: $ux-core-black;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 100%;
+    box-shadow: 0 0 4px #c1c1c1;
+
+    a {
+        color: $ux-core-white;
+        text-decoration: none;
+        height: 3rem;
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: lighten($ux-core-black, 30%)
+        }
+
+        &.sidebar-active {
+            background-color: $ux-core-white;
+            color: $ux-core-black;
+        }
+    }
+}

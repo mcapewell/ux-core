@@ -19,7 +19,8 @@ Vue.component('docs-menu', {
                 { url: "form.html", title: "Form" },
                 { url: "menu.html", title: "Menu" },
                 { url: "alert.html", title: "Alert" },
-                { url: "topbar.html", title: "Topbar" }
+                { url: "topbar.html", title: "Topbar" },
+                { url: "sidebar.html", title: "Sidebar" }
             ]
         }
     }
